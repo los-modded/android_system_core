@@ -13,14 +13,19 @@ on property:sys.boot_completed=1 && property:persist.sys.zram_wb_enabled=true
 # Enable Zram writeback for 2~8G RAM
 on property:ro.vendor.hw.ram=2GB && property:persist.sys.zram_wb_enabled=""
     setprop persist.sys.zram_wb_enabled true
+    setprop ro.vendor.zram.product_swapon true
 on property:ro.vendor.hw.ram=3GB && property:persist.sys.zram_wb_enabled=""
     setprop persist.sys.zram_wb_enabled true
+    setprop ro.vendor.zram.product_swapon true
 on property:ro.vendor.hw.ram=4GB && property:persist.sys.zram_wb_enabled=""
     setprop persist.sys.zram_wb_enabled true
+    setprop ro.vendor.zram.product_swapon true
 on property:ro.vendor.hw.ram=6GB && property:persist.sys.zram_wb_enabled=""
     setprop persist.sys.zram_wb_enabled true
+    setprop ro.vendor.zram.product_swapon true
 on property:ro.vendor.hw.ram=8GB && property:persist.sys.zram_wb_enabled=""
     setprop persist.sys.zram_wb_enabled true
+    setprop ro.vendor.zram.product_swapon true
 on property:ro.vendor.hw.ram=12GB && property:persist.sys.zram_wb_enabled=""
     setprop persist.sys.zram_wb_enabled false
 
